@@ -55,13 +55,91 @@ p{
     font-size: 20px;
 }
  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
   .column {
     flex: 33%;
-    padding: 11rem;
     flex-direction: column;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    align-items: center;
   }
 
-  .imgcontainer {
-    display: flex;
-    flex-direction: row;
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* two equal columns siting next to each other */
+      .column2 {
+        flex: 50%;
+        padding: 0 4px;
+      }
+      
+      .column2 img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      .contact-img {
+        /* The image used */
+        background-image: url("./backgrounds/c_image.jpg");
+        min-height: 850px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .contact-form{
+        position: relative;
+        right: 100;
+        margin: 200px;
+        max-width: 70%;
+        padding: 15px;
+        opacity: 0.9px;
+        
+    }
+
+    /* Full-width input fields */
+        input[type=text], input[type=password] {
+        width: 100%;
+        height: 40%;
+        padding: 15px;
+        margin: 50px 0 22px 0;
+        border: white;
+        border-width: 0.5px;
+    }
+    .message-holder{
+        width: 20%;
+        height: 100%;
+        padding: 15px;
+        margin: 50px 10 80px 80;
+        border: white;
+        border-width: 70px;
+        max-width: 100%;
+        opacity: 90%;
+    }
+
+    input[type=text]:focus, input[type=message]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Set a style for the submit button */
+    .btn {
+        background-color: #1d04aa;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        cursor: pointer;
+        width: 45%;
+
     }
